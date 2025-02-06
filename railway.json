@@ -5,7 +5,7 @@
     "buildCommand": "cd client && CI=false npm install && CI=false npm run build"
   },
   "deploy": {
-    "startCommand": "cd client && CI=false npm start",
+    "startCommand": "cd client && npx serve -s build",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }
