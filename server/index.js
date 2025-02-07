@@ -2,13 +2,13 @@ const express = require('express');
 const cors = require('cors');
 const axios = require('axios');
 require('dotenv').config();
-
+const app = express();
 app.use(cors({
   origin: ['http://localhost:3001', 'https://your-frontend-domain.com'],
   credentials: true
 }));
 
-const app = express();
+
 const port = process.env.PORT || 5001;
 
 app.use(cors());
